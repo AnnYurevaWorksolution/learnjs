@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .message-ball {
+            font-size: 20px;
+            line-height: 200px;
+            text-align: center;
+        }
+        .circle {
+            transition-property: width, height, margin-left, margin-top;
+            transition-duration: 2s;
+            position: fixed;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="go()" type="button">Нарисовать круг</button>
+
+    <div id="div"></div>
+    <p id="p">Привет</p>
+
+    <div id="div1">текст</div>
+
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+
+    <script>
+        div1.insertAdjacentHTML('beforeBegin', '<p>Привет</p>');
+        div1.insertAdjacentHTML('afterEnd', '<p>Пока</p>');
+    </script>
+
+    <script src="index.js"></script>
+
+
+    <script>
+        div.appendChild(p);
+        p.appendChild(div);
+    </script>
+
+<script>
+    console.log('1'+document.querySelector("#outer #inner"))
+    console.log('2'+document.getElementById("#outer").getElementById("#inner"))
+    console.log('3'+document.querySelector("#outer").children[0])
+    console.log('4'+document.getElementById("#outer").firstChild)
+</script>
+</body>
+</html>

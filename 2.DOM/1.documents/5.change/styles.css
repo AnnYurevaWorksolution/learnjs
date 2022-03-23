@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+#watch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#watch span {
+    width: 20%;
+}
+#watch button {
+    width: 50%;
+}
+.hour {
+    color: blue;
+}
+.min {
+    color: green;
+}
+.sec {
+    color: tomato;
+}
+
+#tableUser {
+    border-collapse: collapse;
+}
+#tableUser td,
+#tableUser th {
+    border: 1px black solid;
+    padding: 10px;
+}
+#tableUser th {
+    background: cornsilk;
+}
